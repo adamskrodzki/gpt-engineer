@@ -16,4 +16,4 @@ RUN chmod +x load-envs.sh
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Run load-envs.sh when the container launches
-CMD ["./load-envs.sh"]
+CMD ["/app/load-envs.sh"]

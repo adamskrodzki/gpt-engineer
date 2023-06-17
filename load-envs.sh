@@ -1,7 +1,19 @@
 #!/bin/bash
-set -a  # Automatically export all variables
-source /app/.env  # Load environment variables from .env file
-set +a  # Disable automatic export
+if [ ! -f /app/.env ]; then
+    echo "No .env file found in the current directory"
+    exit 1
+fi
+
+# Set variables
+set -a
+source /app/.env
+set +a
+
+# Print environment variables for verification
+env
+
+# Exit script
+exit 0
 
 # Check if a command is passed and execute it
 if [ $# -gt 0 ]; then
