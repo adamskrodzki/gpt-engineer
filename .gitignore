@@ -34,3 +34,6 @@ archive
 
 # any log file
 *log.txt
+
+# environment variables
+.env

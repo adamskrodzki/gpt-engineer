@@ -31,6 +31,15 @@ GPT Engineer is made to be easy to adapt, extend, and make your agent learn how 
 **Results**:
 - Check the generated files in my-new-project/workspace
 
+### Usage with docker
+
+- create .env file in project root directory, with env variable `OPENAI_API_KEY` with proper value
+- `docker build -t gpt-engineer .`
+- `docker run -v "$(pwd)/.env:/app/.env" gpt-engineer` - if you want to run container that you can attach to with IDE to run actual task for gpt-engineer
+- `docker run -v "$(pwd)/.env:/app/.env" gpt-engineer my-project` - if you want to execute gpt-engineer right away working on task defined in my-project
+
+You can replace `example` with any other folder containing `main_prompt` file 
+
 ### Limitations
 Implementing additional chain of thought prompting, e.g. [Reflexion](https://github.com/noahshinn024/reflexion), should be able to make it more reliable and not miss requested functionality in the main prompt.
 
