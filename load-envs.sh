@@ -9,12 +9,6 @@ set -a
 source /app/.env
 set +a
 
-# Print environment variables for verification
-env
-
-# Exit script
-exit 0
-
 # Check if a command is passed and execute it
 if [ $# -gt 0 ]; then
     python -m gpt_engineer.main "$@"
