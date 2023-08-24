@@ -64,7 +64,7 @@ Check the generated files in `projects/my-new-project/workspace`
 You can check [Docker instructions](docker/README.md) to use Docker, or simply
 do everything in your browser:
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/AntonOsika/gpt-engineer/codespaces)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/adamskrodzki/gpt-engineer/codespaces)
 
 ## Features
 
